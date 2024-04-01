@@ -72,7 +72,7 @@ nav img{
     margin: 20px;
     text-align: center;
     border: 2px solid black;
-    box-shadow: $box-shadow;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
     margin-top: 30px;
 
 }
@@ -84,24 +84,34 @@ nav img{
     padding: 15px;
     font-size: 16.5px;
 }
+
+.corntenedorVideo{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
 .Video{
     display: flex;
     justify-content: center;
-    margin-left: 475px;
     background-color: #27A7DA;
     width: 600px;
     height: 400px;
     border-radius: 10px;
+
 }
 .Video iframe{
     border-radius: $border-radius;
     margin-top: 35px;
 
 }
+
 .SobreNosotros{
     
     padding: 30px;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     line-height: 30px;
     gap: 10px;
@@ -126,7 +136,7 @@ justify-content: center;
     margin-right: 50px;
     padding: 25px;
     background-color: $fondo-textos;
-    box-shadow: $box-shadow;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 
 }
 .ContenedorPresentacion p{
@@ -155,7 +165,7 @@ justify-content: center;
     margin-bottom: 20px;
     padding: 20px;
     width: 330px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 
 
 }
@@ -191,10 +201,10 @@ margin-bottom: 15px;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #cbcbd4; /* dedee2*/
+    background-color: #cbcbd4;
     margin-top: 50px;
     padding: 50px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 
     h2{
         margin-bottom: 25px;
@@ -211,7 +221,6 @@ margin-bottom: 15px;
     background-color: #27A7DA ;
     border-radius: $border-radius;
     align-items: center;
-    box-shadow: $box-shadow;
 
     div{
         display: flex;
@@ -223,28 +232,12 @@ margin-bottom: 15px;
         margin-left: 25px;
         margin-top: 10px;
     }
-    .RankingPeliculas{
-        align-items: center;
-        margin-bottom: 50px;
-    }
-    .ContenedorRanking h2:first-of-type {
-        margin-top: 0;
-    }
+}
+.RankingPeliculas{
+    align-items: center;
+    margin-bottom: 50px;
+}
 
-
-.fotoRanking{
-    height: 100px;
-    width: 150px;
-}
-.formulario
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 500px;
-    
-}
-}
 .Contenedorformulario{
     padding: 1.5em;
     h1{
@@ -255,7 +248,7 @@ margin-bottom: 15px;
 
 .Formulario{
     margin-top: 20px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
     padding: 1em;
 }  
 .formularioContacto{
@@ -345,11 +338,8 @@ margin-bottom: 15px;
     }
     
     .SobreNosotros{
-    
-        padding: 30px;
-        border-radius: $border-radius;
-        width: 475px;
-        margin-left: 10px;
+        
+        margin-left: 50px;
         margin-top: 50px;
         line-height: 30px;
         gap: 10px;
@@ -363,4 +353,65 @@ margin-bottom: 15px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
+}
+@media(max-width: 700px){
+
+.ContenedorDetalleSerie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+}
+@media(max-width: 700px){
+.Foros1, .Foros2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 700px){
+    .ContenedorRanking{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 25px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+    }
+    .Video{
+        width: 350px;
+        height: 250px;
+    }
+    .Video iframe{
+        width: 250px;
+        height: 175px;
+    }
+    .posicion{
+        img{
+        width: 125px;
+        height: 75px;
+        }
+    }
+    .posicion div{
+
+        h2{
+            font-size: 20px;
+        }
+        
+    }
 }

@@ -68,11 +68,11 @@ nav img {
   background-color: white;
   width: 330px;
   height: 520px;
-  border-radius: 8px;
+  border-radius: border-radius 8px;
   margin: 20px;
   text-align: center;
   border: 2px solid black;
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
   margin-top: 30px;
 }
 
@@ -86,10 +86,15 @@ nav img {
   font-size: 16.5px;
 }
 
+.corntenedorVideo {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .Video {
   display: flex;
   justify-content: center;
-  margin-left: 475px;
   background-color: #27A7DA;
   width: 600px;
   height: 400px;
@@ -97,19 +102,18 @@ nav img {
 }
 
 .Video iframe {
-  border-radius: 10px;
+  border-radius: border-radius 8px;
   margin-top: 35px;
 }
 
 .SobreNosotros {
   padding: 30px;
-  border-radius: 8px;
-  width: 1200px;
-  margin-left: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 50px;
   line-height: 30px;
   gap: 10px;
-  background-color: rgb(169, 169, 169);
+  background-color: rgb(200, 200, 200);
 }
 
 .SobreNosotros p {
@@ -128,13 +132,12 @@ nav img {
 }
 
 .ContenedorPresentacion {
-  border-radius: 8px;
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
   padding: 25px;
-  background-color: rgb(169, 169, 169);
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  background-color: rgb(200, 200, 200);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
 
 .ContenedorPresentacion p {
@@ -157,11 +160,11 @@ nav img {
 
 .DetalleSerie {
   background-color: #cbcbd4;
-  border-radius: 8px;
+  border-radius: border-radius 8px;
   margin-bottom: 20px;
   padding: 20px;
   width: 330px;
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
 
 .DetalleSerie h2 {
@@ -178,7 +181,7 @@ nav img {
 .DetalleSerie img {
   width: 100%;
   height: 200px;
-  border-radius: 8px;
+  border-radius: border-radius 8px;
 }
 
 .InfoContenedorPresentacion {
@@ -196,10 +199,10 @@ nav img {
   flex-direction: column;
   margin-left: 50px;
   margin-right: 50px;
-  background-color: #cbcbd4; /* dedee2*/
+  background-color: #cbcbd4;
   margin-top: 50px;
   padding: 50px;
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
 .ContenedorRanking h2 {
   margin-bottom: 25px;
@@ -211,9 +214,8 @@ nav img {
   gap: 75px;
   margin-bottom: 20px;
   background-color: #27A7DA;
-  border-radius: 8px;
+  border-radius: border-radius 8px;
   align-items: center;
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
 .posicion div {
   display: flex;
@@ -225,22 +227,10 @@ nav img {
   margin-left: 25px;
   margin-top: 10px;
 }
-.posicion .RankingPeliculas {
+
+.RankingPeliculas {
   align-items: center;
   margin-bottom: 50px;
-}
-.posicion .ContenedorRanking h2:first-of-type {
-  margin-top: 0;
-}
-.posicion .fotoRanking {
-  height: 100px;
-  width: 150px;
-}
-.posicion .formulario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 500px;
 }
 
 .Contenedorformulario {
@@ -253,7 +243,7 @@ nav img {
 
 .Formulario {
   margin-top: 20px;
-  box-shadow: box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
   padding: 1em;
 }
 
@@ -338,10 +328,7 @@ nav img {
     align-items: center;
   }
   .SobreNosotros {
-    padding: 30px;
-    border-radius: 8px;
-    width: 475px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 50px;
     line-height: 30px;
     gap: 10px;
@@ -355,6 +342,48 @@ nav img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 700px) {
+  .ContenedorDetalleSerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .Foros1, .Foros2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .ContenedorRanking {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+  }
+  .Video {
+    width: 350px;
+    height: 250px;
+  }
+  .Video iframe {
+    width: 250px;
+    height: 175px;
+  }
+  .posicion img {
+    width: 125px;
+    height: 75px;
+  }
+  .posicion div h2 {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
