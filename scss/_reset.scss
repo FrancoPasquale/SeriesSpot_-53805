@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Montserrat', sans-serif; font-weight: 700;
+}
+h2{
+    font-family: 'Roboto', sans-serif; font-weight: 500;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+nav img{
+    height: 50px;
+}
+.linksTargs{
+    text-decoration: none;
+    list-style: none;
+    padding:   5px;
+    color: black;
+    border: 1px solid black;
+}
+.ContenedorPresentacion{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    background-color: $fondo-textos;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+
+}
+.ContenedorPresentacion p{
+    margin-bottom: 15px;
+}
+.SeccionTarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.Tarjetas{
+    background-color: white;
+    width: 330px;
+    height: 520px;
+    border-radius: $border-radius;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+
+}
+.Tarjetas img{
+    width: 327px;
+    height: 200px;
+}
+.Tarjetas p{
+    padding: 15px;
+    font-size: 16.5px;
+}
