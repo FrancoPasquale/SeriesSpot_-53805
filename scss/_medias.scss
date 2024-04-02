@@ -17,14 +17,12 @@
 {
 
     .SeccionTarjetas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
     }
     
     .SobreNosotros{
         
-        margin-left: 50px;
+        @include  crearMargen;
         margin-top: 50px;
         line-height: 30px;
         gap: 10px;
@@ -43,28 +41,22 @@
 
 .ContenedorDetalleSerie
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    @include flex-column-center;
+    @include  crearMargen;
 
 }
 }
 @media(max-width: 700px){
 .Foros1, .Foros2
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 }
 @media(max-width: 700px){
     .ContenedorRanking{
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
-        margin-right: 50px;
+        @include  crearMargen;
         padding: 25px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
     }
