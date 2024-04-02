@@ -1,0 +1,92 @@
+@media (min-width: 700px)
+{
+    .Formulario{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .Formulario > *{
+        padding: 2em;
+    }
+    .InfoFormulario h2, .InfoFormulario ul, .InfoFormulario p
+    {
+        padding: 1em;
+        text-align: left;
+    }
+}
+@media(max-width: 700px)
+{
+
+    .SeccionTarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .SobreNosotros{
+        
+        margin-left: 50px;
+        margin-top: 50px;
+        line-height: 30px;
+        gap: 10px;
+    }
+    .SobreNosotros p{
+        margin-bottom: 20px;
+    }
+}
+.ContenedorFooter img{
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+@media(max-width: 700px){
+
+.ContenedorDetalleSerie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+}
+@media(max-width: 700px){
+.Foros1, .Foros2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media(max-width: 700px){
+    .ContenedorRanking{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 25px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+    }
+    .Video{
+        width: 350px;
+        height: 250px;
+    }
+    .Video iframe{
+        width: 250px;
+        height: 175px;
+    }
+    .posicion{
+        img{
+        width: 125px;
+        height: 75px;
+        }
+    }
+    .posicion div{
+
+        h2{
+            font-size: 20px;
+        }
+        
+    }
+}

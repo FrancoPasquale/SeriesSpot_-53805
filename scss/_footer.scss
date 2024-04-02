@@ -18,3 +18,40 @@ footer{
         justify-content: space-evenly;
         gap: 30px;
     }
+      .lista,.links {
+        display: flex;
+      }
+      
+      .links {
+        position: relative;
+      }
+      
+      .links::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px; 
+        width: 0;
+        height: 2px; 
+        background-color: transparent;
+        transition: width 0.5s ease; 
+      }
+      
+      .links:hover::after {
+        width: 100%;
+        background-color: #ffffff; 
+      }
+      
+      
+      .links:hover::after {
+        animation: underline 1s forwards;
+      }
+      
+      @keyframes underline {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
