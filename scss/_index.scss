@@ -1,0 +1,76 @@
+.SobreNosotros{
+    
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    line-height: 30px;
+    gap: 10px;
+    background-color: $fondo-textos;
+}
+.SobreNosotros p{
+    margin-bottom: 20px;
+}
+.TituloSobreNosotros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ParrafosSobreNosotros{
+    padding: 25px;
+}
+.imagenInicio{
+    position: relative;
+}
+.ContenedorImagen{
+    position: relative;
+    img{
+        width: 100%;
+        height: 50%;
+    }
+}
+.ContenedorImagen::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.TextoSuperpuesto{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  h1{
+    margin-bottom: 40px;
+    font-size: 60px;
+    margin-left: 40px;
+  }
+  h2{
+    margin-bottom: 50px;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: skyblue;
+    border-radius: 8px;
+    padding: 10px 10px;
+    width: 300px;
+    margin-top: 20px;
+  }
+}
+.botonIniciio
+{
+    display: flex;
+    justify-content: center;
+}
